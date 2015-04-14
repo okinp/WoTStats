@@ -1,3 +1,3 @@
 [submodule "blocks/Protocol"]
 	path = blocks/Protocol
-	url = git@github.com:BanTheRewind/Cinder-Protocol.git
+	url = https://github.com/BanTheRewind/Cinder-Protocol.git
