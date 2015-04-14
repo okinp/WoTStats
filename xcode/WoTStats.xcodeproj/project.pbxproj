@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		FA4524D600564D2F842FA538 /* ProtocolInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E9377C71E647FB962AD2F9 /* ProtocolInterface.h */; };
+		A390759685E544D6BAC09599 /* KeyValuePairInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = FDBDBB3827804757B36F77FB /* KeyValuePairInterface.h */; };
+		501FA94E50474DDE99B1BAA3 /* HttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A1E83CF31CD49FAB57ECA72 /* HttpResponse.h */; };
+		F1C720AA7507409F88820225 /* HttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C7AB353B6C4C8F970C16D2 /* HttpRequest.h */; };
+		8BD09D502E8C418196930DED /* HttpInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = C1D38161305440AFB59915F2 /* HttpInterface.h */; };
+		A1DBB7F665B04857A4293B4B /* HeaderInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BA2F90748841F1987BE69E /* HeaderInterface.h */; };
+		8B8356341C564EF0BD3B3316 /* FtpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A01064F7A7441B58F120DC3 /* FtpResponse.h */; };
+		22076E29DA224147AD37F0D6 /* FtpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDF1D8D1EAE4CDCAAABF6EE /* FtpRequest.h */; };
+		03823E20356543989364AAC1 /* FtpInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CE778BC74F4E8E9496F697 /* FtpInterface.h */; };
+		A8A3249D9323457E956AADF7 /* BodyInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 5186EBD9FB054D55B1CD5621 /* BodyInterface.h */; };
+		A39167807303411EB7E03818 /* ProtocolInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF9BBB822A4F499ABB446806 /* ProtocolInterface.cpp */; };
+		26CA91E0B78F42FDBC029A78 /* KeyValuePairInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22037342794D43F987E9BBAF /* KeyValuePairInterface.cpp */; };
+		1F2F8C814A8342238BF47D2F /* HttpResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05546D99F9964A1096AAAE16 /* HttpResponse.cpp */; };
+		F690A9F810B84F7D82C325AB /* HttpRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 097CF4DAEC4246EC8761E5FE /* HttpRequest.cpp */; };
+		EDD44DE69D1C4836A1322E24 /* HttpInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35CA4B31CD8F4BB2A54C9412 /* HttpInterface.cpp */; };
+		BC615742AAB545168A9BD4CA /* HeaderInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4055C5020A646F7B315978F /* HeaderInterface.cpp */; };
+		8281C054D6534352AE6DF0B4 /* FtpResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28DC246BA62D44BB89777666 /* FtpResponse.cpp */; };
+		4D172D2B9D3B4152B571E9D5 /* FtpRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA5031359D44E1CBDBA11C9 /* FtpRequest.cpp */; };
+		465230BF1CEA4AF59DBC017C /* FtpInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8E4755C8DD045C2A9A2B6E6 /* FtpInterface.cpp */; };
+		22387DF08D5A48BEB09A2AFC /* BodyInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37D7E89E04544D3092484766 /* BodyInterface.cpp */; };
+		909ED88663DB44C59676ABFE /* WoTStats_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D604831F783C49C78A638833 /* WoTStats_Prefix.pch */; };
+		55FBA4C3E6C64DB69EB40D11 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4F46F48A7B654AB89E918E2D /* CinderApp.icns */; };
+		A39F902D714849AD81935D05 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = E9DDD973A3804607BE0068B6 /* Resources.h */; };
+		527DF5ABD735437E80E6CD6E /* WoTStatsApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE318785E28463AA59C8E04 /* WoTStatsApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* WoTStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoTStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE318785E28463AA59C8E04 /* WoTStatsApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/WoTStatsApp.cpp; sourceTree = "<group>"; name = WoTStatsApp.cpp; };
+		E9DDD973A3804607BE0068B6 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
+		4F46F48A7B654AB89E918E2D /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
+		16584D8B83D5408BB56D0317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
+		D604831F783C49C78A638833 /* WoTStats_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = WoTStats_Prefix.pch; sourceTree = "<group>"; name = WoTStats_Prefix.pch; };
+		37D7E89E04544D3092484766 /* BodyInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/BodyInterface.cpp; sourceTree = "<group>"; name = BodyInterface.cpp; };
+		E8E4755C8DD045C2A9A2B6E6 /* FtpInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/FtpInterface.cpp; sourceTree = "<group>"; name = FtpInterface.cpp; };
+		8EA5031359D44E1CBDBA11C9 /* FtpRequest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/FtpRequest.cpp; sourceTree = "<group>"; name = FtpRequest.cpp; };
+		28DC246BA62D44BB89777666 /* FtpResponse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/FtpResponse.cpp; sourceTree = "<group>"; name = FtpResponse.cpp; };
+		F4055C5020A646F7B315978F /* HeaderInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/HeaderInterface.cpp; sourceTree = "<group>"; name = HeaderInterface.cpp; };
+		35CA4B31CD8F4BB2A54C9412 /* HttpInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/HttpInterface.cpp; sourceTree = "<group>"; name = HttpInterface.cpp; };
+		097CF4DAEC4246EC8761E5FE /* HttpRequest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/HttpRequest.cpp; sourceTree = "<group>"; name = HttpRequest.cpp; };
+		05546D99F9964A1096AAAE16 /* HttpResponse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/HttpResponse.cpp; sourceTree = "<group>"; name = HttpResponse.cpp; };
+		22037342794D43F987E9BBAF /* KeyValuePairInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/KeyValuePairInterface.cpp; sourceTree = "<group>"; name = KeyValuePairInterface.cpp; };
+		BF9BBB822A4F499ABB446806 /* ProtocolInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../blocks/Protocol/src/ProtocolInterface.cpp; sourceTree = "<group>"; name = ProtocolInterface.cpp; };
+		5186EBD9FB054D55B1CD5621 /* BodyInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/BodyInterface.h; sourceTree = "<group>"; name = BodyInterface.h; };
+		54CE778BC74F4E8E9496F697 /* FtpInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/FtpInterface.h; sourceTree = "<group>"; name = FtpInterface.h; };
+		7CDF1D8D1EAE4CDCAAABF6EE /* FtpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/FtpRequest.h; sourceTree = "<group>"; name = FtpRequest.h; };
+		3A01064F7A7441B58F120DC3 /* FtpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/FtpResponse.h; sourceTree = "<group>"; name = FtpResponse.h; };
+		10BA2F90748841F1987BE69E /* HeaderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/HeaderInterface.h; sourceTree = "<group>"; name = HeaderInterface.h; };
+		C1D38161305440AFB59915F2 /* HttpInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/HttpInterface.h; sourceTree = "<group>"; name = HttpInterface.h; };
+		11C7AB353B6C4C8F970C16D2 /* HttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/HttpRequest.h; sourceTree = "<group>"; name = HttpRequest.h; };
+		1A1E83CF31CD49FAB57ECA72 /* HttpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/HttpResponse.h; sourceTree = "<group>"; name = HttpResponse.h; };
+		FDBDBB3827804757B36F77FB /* KeyValuePairInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/KeyValuePairInterface.h; sourceTree = "<group>"; name = KeyValuePairInterface.h; };
+		B1E9377C71E647FB962AD2F9 /* ProtocolInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../blocks/Protocol/src/ProtocolInterface.h; sourceTree = "<group>"; name = ProtocolInterface.h; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EBE318785E28463AA59C8E04 /* WoTStatsApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* WoTStats.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* WoTStats */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = WoTStats;
+			sourceTree = "<group>";
+		};
+		2669090F912F47B48BF170BE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				37D7E89E04544D3092484766 /* BodyInterface.cpp */,
+				E8E4755C8DD045C2A9A2B6E6 /* FtpInterface.cpp */,
+				8EA5031359D44E1CBDBA11C9 /* FtpRequest.cpp */,
+				28DC246BA62D44BB89777666 /* FtpResponse.cpp */,
+				F4055C5020A646F7B315978F /* HeaderInterface.cpp */,
+				35CA4B31CD8F4BB2A54C9412 /* HttpInterface.cpp */,
+				097CF4DAEC4246EC8761E5FE /* HttpRequest.cpp */,
+				05546D99F9964A1096AAAE16 /* HttpResponse.cpp */,
+				22037342794D43F987E9BBAF /* KeyValuePairInterface.cpp */,
+				BF9BBB822A4F499ABB446806 /* ProtocolInterface.cpp */,
+				5186EBD9FB054D55B1CD5621 /* BodyInterface.h */,
+				54CE778BC74F4E8E9496F697 /* FtpInterface.h */,
+				7CDF1D8D1EAE4CDCAAABF6EE /* FtpRequest.h */,
+				3A01064F7A7441B58F120DC3 /* FtpResponse.h */,
+				10BA2F90748841F1987BE69E /* HeaderInterface.h */,
+				C1D38161305440AFB59915F2 /* HttpInterface.h */,
+				11C7AB353B6C4C8F970C16D2 /* HttpRequest.h */,
+				1A1E83CF31CD49FAB57ECA72 /* HttpResponse.h */,
+				FDBDBB3827804757B36F77FB /* KeyValuePairInterface.h */,
+				B1E9377C71E647FB962AD2F9 /* ProtocolInterface.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		CB19730E97B6470CA39FBA5B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2669090F912F47B48BF170BE /* src */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				CB19730E97B6470CA39FBA5B /* Protocol */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E9DDD973A3804607BE0068B6 /* Resources.h */,
+				D604831F783C49C78A638833 /* WoTStats_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F46F48A7B654AB89E918E2D /* CinderApp.icns */,
+				16584D8B83D5408BB56D0317 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* WoTStats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WoTStats" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoTStats;
+			productInstallPath = "$(HOME)/Applications";
+			productName = WoTStats;
+			productReference = 8D1107320486CEB800E47090 /* WoTStats.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WoTStats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* WoTStats */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* WoTStats */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FBA4C3E6C64DB69EB40D11 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527DF5ABD735437E80E6CD6E /* WoTStatsApp.cpp in Sources */,
+				22387DF08D5A48BEB09A2AFC /* BodyInterface.cpp in Sources */,
+				465230BF1CEA4AF59DBC017C /* FtpInterface.cpp in Sources */,
+				4D172D2B9D3B4152B571E9D5 /* FtpRequest.cpp in Sources */,
+				8281C054D6534352AE6DF0B4 /* FtpResponse.cpp in Sources */,
+				BC615742AAB545168A9BD4CA /* HeaderInterface.cpp in Sources */,
+				EDD44DE69D1C4836A1322E24 /* HttpInterface.cpp in Sources */,
+				F690A9F810B84F7D82C325AB /* HttpRequest.cpp in Sources */,
+				1F2F8C814A8342238BF47D2F /* HttpResponse.cpp in Sources */,
+				26CA91E0B78F42FDBC029A78 /* KeyValuePairInterface.cpp in Sources */,
+				A39167807303411EB7E03818 /* ProtocolInterface.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WoTStats_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_NAME = WoTStats;
+				WRAPPER_EXTENSION = app;
+				SYMROOT = ./build;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WoTStats_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_NAME = WoTStats;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+				SYMROOT = ./build;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				CINDER_PATH = "../../../../SDKs/cinder_master";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					../blocks/Protocol/src,
+				);
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				CINDER_PATH = "../../../../SDKs/cinder_master";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					../blocks/Protocol/src,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WoTStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WoTStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
